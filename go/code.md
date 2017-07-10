@@ -173,10 +173,10 @@ func main(){
 }
 ```
 
-swith文に指定した値に一致するcaseが実行される。
-どのcaseにも一致しなかった場合はdefaultが実行される。
-カンマで区切った複数値も指定できる。
++ switch文に指定した値に一致するcaseが実行される。
++ どのcaseにも一致しなかった場合はdefaultが実行される。
++ カンマで区切った複数の値も指定できる。
 
 ### fallthrough
-Goのswitchではcaseが実行されると次のcaseに実行が映ることなくswitch文が終了する。
-caseの処理が終わった後に、次のcaseに処理を進めたい場合は、case内にfallthroughを書くことで名おじ的に次のcaseに処理を進めることができる。
++ Goのswitchではcaseが実行されると次のcaseに実行が移ることなくswitch文が終了する。
++ caseの処理が終わった後に次のcaseに処理を進めたい場合は、case内にfallthroughを書くことで明示的に次のcaseに処理を進めることができる。
